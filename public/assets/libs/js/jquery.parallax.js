@@ -92,27 +92,27 @@
 		supportsBackgroundPositionXY = $('<div />', { style: 'background:#fff' }).css('background-position-x') !== undefined,
 
 		setBackgroundPosition = (supportsBackgroundPositionXY ?
-			function($elem, x, y) {
-				$elem.css({
-					'background-position-x': x,
-					'background-position-y': y
-				});
-			} :
-			function($elem, x, y) {
-				$elem.css('background-position', x + ' ' + y);
-			}
+				function($elem, x, y) {
+					$elem.css({
+						'background-position-x': x,
+						'background-position-y': y
+					});
+				} :
+				function($elem, x, y) {
+					$elem.css('background-position', x + ' ' + y);
+				}
 		),
 
 		getBackgroundPosition = (supportsBackgroundPositionXY ?
-			function($elem) {
-				return [
-					$elem.css('background-position-x'),
-					$elem.css('background-position-y')
-				];
-			} :
-			function($elem) {
-				return $elem.css('background-position').split(' ');
-			}
+				function($elem) {
+					return [
+						$elem.css('background-position-x'),
+						$elem.css('background-position-y')
+					];
+				} :
+				function($elem) {
+					return $elem.css('background-position').split(' ');
+				}
 		),
 
 		requestAnimFrame = (
@@ -371,7 +371,7 @@
 			$backgroundElements = this.$element.find('[data-stellar-background-ratio]');
 
 			if (this.$element.data('stellar-background-ratio')) {
-                $backgroundElements = $backgroundElements.add(this.$element);
+				$backgroundElements = $backgroundElements.add(this.$element);
 			}
 
 			$backgroundElements.each(function() {
@@ -412,7 +412,7 @@
 
 				offsetLeft = $this.offset().left - marginLeft - scrollLeft;
 				offsetTop = $this.offset().top - marginTop - scrollTop;
-				
+
 				// Calculate the offset parent
 				$this.parents().each(function() {
 					var $this = $(this);
@@ -610,7 +610,7 @@
 					ticking = true;
 				}
 			};
-			
+
 			this.$scrollElement.bind('scroll.' + this.name, requestTick);
 			requestTick();
 		},

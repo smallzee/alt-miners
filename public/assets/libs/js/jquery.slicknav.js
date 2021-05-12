@@ -5,7 +5,7 @@
  */
 ;(function ($, document, window) {
     var
-    // default settings object.
+        // default settings object.
         defaults = {
             label: 'MENU',
             duplicate: true,
@@ -22,7 +22,7 @@
             showChildren: false,
             removeIds: false,
             removeClasses: false,
-			brand: '',
+            brand: '',
             init: function () {},
             beforeOpen: function () {},
             beforeClose: function () {},
@@ -94,19 +94,19 @@
         // create menu bar
         $this.mobileNav.attr('class', prefix + '_nav');
         menuBar = $('<div class="' + prefix + '_menu"></div>');
-		if (settings.brand !== '') {
-			var brand = $('<div class="' + prefix + '_brand">'+settings.brand+'</div>');
-			$(menuBar).append(brand);
-		}
+        if (settings.brand !== '') {
+            var brand = $('<div class="' + prefix + '_brand">'+settings.brand+'</div>');
+            $(menuBar).append(brand);
+        }
         $this.btn = $(
             ['<' + settings.parentTag + ' aria-haspopup="true" tabindex="0" class="' + prefix + '_btn ' + prefix + '_collapsed">',
                 '<span class="' + prefix + '_menutxt">' + settings.label + '</span>',
                 '<span class="' + iconClass + '">',
-                    '<span class="' + prefix + '_icon-bar"></span>',
-                    '<span class="' + prefix + '_icon-bar"></span>',
-                    '<span class="' + prefix + '_icon-bar"></span>',
+                '<span class="' + prefix + '_icon-bar"></span>',
+                '<span class="' + prefix + '_icon-bar"></span>',
+                '<span class="' + prefix + '_icon-bar"></span>',
                 '</span>',
-            '</' + settings.parentTag + '>'
+                '</' + settings.parentTag + '>'
             ].join('')
         );
         $(menuBar).append($this.btn);
@@ -173,16 +173,16 @@
 
 
             } else if ( item.children().length === 0) {
-                 item.addClass(prefix+'_txtnode');
+                item.addClass(prefix+'_txtnode');
             }
 
             // accessibility for links
             item.children('a').attr('role', 'menuitem').click(function(event){
                 //Ensure that it's not a parent
                 if (settings.closeOnClick && !$(event.target).parent().closest('li').hasClass(prefix+'_parent')) {
-                        //Emulate menu close if set
-                        $($this.btn).click();
-                    }
+                    //Emulate menu close if set
+                    $($this.btn).click();
+                }
             });
 
             //also close on click if parent links are set
@@ -194,7 +194,7 @@
 
                 item.find('.'+prefix+'_parent-link a:not(.'+prefix+'_item)').click(function(event){
                     //Emulate menu close
-                        $($this.btn).click();
+                    $($this.btn).click();
                 });
             }
         });
@@ -254,7 +254,7 @@
         // allow links clickable within parent tags if set
         if (settings.allowParentLinks && settings.nestedParentLinks) {
             $('.'+prefix+'_item a').click(function(e){
-                    e.stopImmediatePropagation();
+                e.stopImmediatePropagation();
             });
         }
     };
@@ -320,10 +320,10 @@
 
         if (el.hasClass(prefix+'_hidden')) {
             el.removeClass(prefix+'_hidden');
-             //Fire beforeOpen callback
-                if (!init) {
-                    settings.beforeOpen(trigger);
-                }
+            //Fire beforeOpen callback
+            if (!init) {
+                settings.beforeOpen(trigger);
+            }
             el.slideDown(duration, settings.easingOpen, function(){
 
                 $(trigger).removeClass(prefix+'_animating');
@@ -447,7 +447,7 @@
                 }
             });
 
-        // If is a string and doesn't start with an underscore or 'init' function, treat this as a call to a public method.
+            // If is a string and doesn't start with an underscore or 'init' function, treat this as a call to a public method.
         } else if (typeof options === 'string' && options[0] !== '_' && options !== 'init') {
 
             // Cache the method call to make it possible to return a value
@@ -469,4 +469,3 @@
         }
     };
 }(jQuery, document, window));
- 

@@ -317,7 +317,7 @@
             postfix: "",
             max_postfix: "",
             decorate_both: true,
-            values_separator: " â ",
+            values_separator: " â€” ",
 
             input_values_separator: ";",
 
@@ -803,7 +803,7 @@
             if ($.contains(this.$cache.cont[0], e.target) || this.dragging) {
                 this.callOnFinish();
             }
-            
+
             this.dragging = false;
         },
 
@@ -2448,4 +2448,3 @@
     }());
 
 }));
- 

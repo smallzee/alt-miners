@@ -586,8 +586,8 @@
 				update = function($el, filter){
 					try {
 						(multi && type === 'filter' && !(output.filter === 'none' || output.filter === '')) ?
-								$el.filter(filter).addClass(self.controls.activeClass) :
-								$el.removeClass(self.controls.activeClass).filter(filter).addClass(self.controls.activeClass);
+							$el.filter(filter).addClass(self.controls.activeClass) :
+							$el.removeClass(self.controls.activeClass).filter(filter).addClass(self.controls.activeClass);
 					} catch(e) {}
 				},
 				type = 'filter',
@@ -809,7 +809,7 @@
 									match = /\(([^)]+)\)/.exec(str),
 									val = match[1];
 
-									return {val: val};
+								return {val: val};
 							}
 						}
 						return true;
@@ -1359,7 +1359,7 @@
 				$el.on('webkitTransitionEnd.mixItUp transitionend.mixItUp',function(e){
 					if(
 						(e.originalEvent.propertyName.indexOf('transform') > -1 ||
-						e.originalEvent.propertyName.indexOf('opacity') > -1) &&
+							e.originalEvent.propertyName.indexOf('opacity') > -1) &&
 						$(e.originalEvent.target).is(self.selectors.target)
 					){
 						$el.off('.mixItUp');
@@ -1649,7 +1649,7 @@
 
 			_camelCase: function(string){
 				return string.replace(/-([a-z])/g, function(g){
-						return g[1].toUpperCase();
+					return g[1].toUpperCase();
 				});
 			},
 
@@ -2095,4 +2095,4 @@
 		});
 	};
 
-})(jQuery); 
+})(jQuery);

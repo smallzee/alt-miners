@@ -2,6 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0d6b4d9-c8bd-427e-b2f2-54728aa34eaf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/06-_crypto_electricity-400.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/1000x-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/bandwidth-close-up-computer-1148820.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/contact-form-script.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/contact-form-script.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_150998020.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_167775236.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_201329668.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_251661316.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_301992964.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_3076.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_385879044.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/index_83889156.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.actions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.actions.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/ion.rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/ion.rangeSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.counterup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.counterup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.mixitup.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.mixitup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.parallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.parallax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.slicknav.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.slicknav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.revolution.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.revolution.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.tools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/nivo-lightbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/nivo-lightbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/waypoints.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/waypoints.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/js/wow.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/js/wow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
     </list>
@@ -21,20 +54,42 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="405">
+              <caret line="58" column="1228" selection-start-line="58" selection-start-column="1228" selection-end-line="58" selection-end-column="1228" />
+              <folding>
+                <element signature="e#184#282#0#HTML" expanded="true" />
+                <element signature="e#357#378#0#HTML" expanded="true" />
+                <element signature="e#2039#2114#0#HTML" expanded="true" />
+                <element signature="e#3056#3116#0#HTML" expanded="true" />
+                <element signature="e#4077#4137#0#HTML" expanded="true" />
+                <element signature="e#5228#5411#0#HTML" expanded="true" />
+                <element signature="e#6526#6709#0#HTML" expanded="true" />
+                <element signature="e#8414#8490#0#HTML" expanded="true" />
+                <element signature="e#9484#9544#0#HTML" expanded="true" />
+                <element signature="e#10510#10570#0#HTML" expanded="true" />
+                <element signature="e#11657#11841#0#HTML" expanded="true" />
+                <element signature="e#13744#13820#0#HTML" expanded="true" />
+                <element signature="e#14814#14874#0#HTML" expanded="true" />
+                <element signature="e#15865#15926#0#HTML" expanded="true" />
+                <element signature="e#17016#17200#0#HTML" expanded="true" />
+                <element signature="e#17359#17424#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="240">
+              <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#7768#7773#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/app/Helpers/helpers.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
-              <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
               <folding>
                 <element signature="n#time_ago#0;n#!!top" />
               </folding>
@@ -52,6 +107,12 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>php</find>
+      <find>.php</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,8 +126,28 @@
         <option value="$PROJECT_DIR$/app/Helpers/helpers.php" />
         <option value="$PROJECT_DIR$/app/Settings.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/MyController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/libs/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layout.blade.php" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery-min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/popper.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/bootstrap.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.mixitup.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.counterup.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/ion.rangeSlider.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.parallax.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/waypoints.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/wow.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/owl.carousel.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.slicknav.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/nivo-lightbox.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/main.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/contact-form-script.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.tools.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.revolution.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/form-validator.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.actions.min.js" />
+        <option value="$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.carousel.min.js" />
       </list>
     </option>
   </component>
@@ -233,6 +314,23 @@
             <path>
               <item name="cplusmining" type="b2602c69:ProjectViewProjectNode" />
               <item name="cplusmining" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusmining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cplusmining" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cplusmining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cplusmining" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -262,8 +360,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/assets/libs" />
       <recent name="$PROJECT_DIR$/public/assets/images" />
+      <recent name="$PROJECT_DIR$/public/assets/libs" />
       <recent name="$PROJECT_DIR$/public/assets" />
     </key>
   </component>
@@ -298,17 +396,18 @@
       <workItem from="1620726597746" duration="617000" />
       <workItem from="1620735249440" duration="590000" />
       <workItem from="1620736694024" duration="19000" />
-      <workItem from="1620736723965" duration="2092000" />
+      <workItem from="1620736723965" duration="5946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3318000" />
+    <option name="totallyTimeSpent" value="7172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.37479806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37479806" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -323,7 +422,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32930514" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32930514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -348,24 +447,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/libs/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/assets/libs/extras/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/wow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -382,7 +467,7 @@
     <entry file="file://$PROJECT_DIR$/app/Helpers/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
-          <caret line="64" column="25" lean-forward="true" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
           <folding>
             <element signature="n#time_ago#0;n#!!top" />
           </folding>
@@ -403,17 +488,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="465">
+          <caret line="30" column="108" selection-start-line="30" selection-start-column="108" selection-end-line="30" selection-end-column="108" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/css/owl.carousel.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="405">
+          <caret line="58" column="1228" selection-start-line="58" selection-start-column="1228" selection-end-line="58" selection-end-column="1228" />
+          <folding>
+            <element signature="e#184#282#0#HTML" expanded="true" />
+            <element signature="e#357#378#0#HTML" expanded="true" />
+            <element signature="e#2039#2114#0#HTML" expanded="true" />
+            <element signature="e#3056#3116#0#HTML" expanded="true" />
+            <element signature="e#4077#4137#0#HTML" expanded="true" />
+            <element signature="e#5228#5411#0#HTML" expanded="true" />
+            <element signature="e#6526#6709#0#HTML" expanded="true" />
+            <element signature="e#8414#8490#0#HTML" expanded="true" />
+            <element signature="e#9484#9544#0#HTML" expanded="true" />
+            <element signature="e#10510#10570#0#HTML" expanded="true" />
+            <element signature="e#11657#11841#0#HTML" expanded="true" />
+            <element signature="e#13744#13820#0#HTML" expanded="true" />
+            <element signature="e#14814#14874#0#HTML" expanded="true" />
+            <element signature="e#15865#15926#0#HTML" expanded="true" />
+            <element signature="e#17016#17200#0#HTML" expanded="true" />
+            <element signature="e#17359#17424#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/popper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.mixitup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="2097" column="11" selection-start-line="2097" selection-start-column="11" selection-end-line="2097" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.counterup.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="7" column="917" selection-start-line="7" selection-start-column="917" selection-end-line="7" selection-end-column="917" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/ion.rangeSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="2450" selection-start-line="2450" selection-end-line="2450" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.parallax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="659" column="27" selection-start-line="659" selection-start-column="27" selection-end-line="659" selection-end-column="27" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/waypoints.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="7" column="7808" selection-start-line="7" selection-start-column="7808" selection-end-line="7" selection-end-column="7808" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/wow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/owl.carousel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret column="14916" selection-start-column="14916" selection-end-column="14916" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.slicknav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="471" selection-start-line="471" selection-end-line="471" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/nivo-lightbox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="411" selection-start-line="411" selection-end-line="411" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="107" column="28" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/contact-form-script.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.tools.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/form-validator.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="8" column="5862" selection-start-line="8" selection-start-column="5862" selection-end-line="8" selection-end-column="5862" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/jquery.themepunch.revolution.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="7" column="62390" lean-forward="true" selection-start-line="7" selection-start-column="62390" selection-end-line="7" selection-end-column="62390" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.actions.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="7" column="8089" selection-start-line="7" selection-start-column="8089" selection-end-line="7" selection-end-column="8089" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/libs/js/extensions/revolution.extension.carousel.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="6" column="7370" selection-start-line="6" selection-start-column="7370" selection-end-line="6" selection-end-column="7370" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7768#7773#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -50,7 +50,7 @@
 
                     <div class="header-top-right float-right">
                         <a href="{{url('account/login')}}" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
-                        <a href="{{url('account/create')}}" class="header-top-button"><i class="lni-pencil"></i> Create Live Account</a>
+                        <a href="{{url('account/create')}}" class="header-top-button"><i class="lni-pencil"></i> Create Account</a>
 
                     </div>
                 </div>
@@ -96,11 +96,6 @@
                     <li class="nav-item ">
                         <a class="nav-link " href="{{url('gallery')}}"  aria-haspopup="true" aria-expanded="false">
                             Gallery <i class="fa fa-angle-down"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="{{url('videos')}}"  aria-haspopup="true" aria-expanded="false">
-                            Videos <i class="fa fa-angle-down"></i>
                         </a>
                     </li>
                     <li class="nav-item ">

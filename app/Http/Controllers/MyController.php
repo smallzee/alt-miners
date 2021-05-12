@@ -22,4 +22,9 @@ class MyController extends Controller
         $data['page_title'] = "Gallery";
         return view('gallery',$data);
     }
+
+    public function faq(){
+        $data['page_title'] = "FAQ";
+        return view('faq',$data);
+    }
 }

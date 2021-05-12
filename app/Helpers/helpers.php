@@ -65,3 +65,8 @@ function page_title($page_title = ""){
 function image_url($src){
     return url('assets/images/'.$src);
 }
+
+function get_all_countries(){
+    $data = \App\Countries::orderBy('country_name')->get();
+    return $data;
+}

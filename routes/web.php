@@ -14,4 +14,10 @@
 Route::get("/", "MyController@index")->name('index');
 Route::get("about", "MyController@about")->name('about');
 Route::get("gallery", "MyController@gallery")->name('gallery');
+Route::get("faq", "MyController@faq")->name('faq');
+
+Route::group(['namespace'=>'account','prefix'=>'account'], function (){
+    Route::resource("login", "LoginController");
+    Route::resource("create", "CreateController");
+});
 

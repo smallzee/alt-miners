@@ -26,6 +26,10 @@
     <link rel="stylesheet" type="text/css" href="{{url('assets/libs/css/responsive.css')}}">
 
     <link rel="icon" href="{{image_url('logo.png')}}">
+
+    <script src="{{url('assets/libs/js/jquery-min.js')}}"></script>
+    <script src="{{url('assets/libs/js/tradingview.js')}}"></script>
+    <script type="text/javascript" src="../s3.tradingview.com/tv.js"></script>
 </head>
 <body>
 
@@ -208,7 +212,6 @@
 <div id="preloader">
     <div class="loader" id="loader-1"></div>
 </div>
-<script src="{{url('assets/libs/js/jquery-min.js')}}"></script>
 <script src="{{url('assets/libs/js/popper.min.js')}}"></script>
 <script src="{{url('assets/libs/js/bootstrap.min.js')}}"></script>
 

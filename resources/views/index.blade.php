@@ -63,4 +63,435 @@
         <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
     </div>
 
+
+    <section class="featured-bg section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title">Why Mining</h2>
+                        <p>The powerful idea behind Bitcoin and mining</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-xs-12">
+                    <img class="img-fluid" src="{{image_url('bitcoin-mine-3.jpg')}}" alt="">
+
+                </div>
+                <div class="col-md-12 col-lg-6 col-xs-12">
+                    <h2 class="intro-title">Why is mining so important</h2>
+                    <p class="intro-desc">Unlike paper money, Bitcoin and other cryptocurrencies are produced mathematically and held digitally. The people who voluntarily offer their computing power to secure these cryptocurrency networks are called miners. Cryptocurrencies don’t have a central government or other so-called ‘middlemen’ that decide about the future of the system. – They are in fact digital, borderless democracies in which miners vote with their computing power to reach order and consensus..
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-xs-12">
+                            <div class="featured-item">
+                                <div class="icon">
+                                    <i class="lni-medall"></i>
+                                </div>
+                                <h3><a href="#">Contributing to the ecosystem</a></h3>
+                                <div class="featured-content">
+                                    <p> we are actively contributing to the cryptocurrency ecosystem, from launching awareness campaigns to releasing open-source mining software.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-xs-12">
+                            <div class="featured-item">
+                                <div class="icon">
+                                    <i class="lni-layers"></i>
+                                </div>
+                                <h3><a href="#">Highly experienced</a></h3>
+                                <div class="featured-content">
+                                    <p>We are building mining data centers around the world that are able to support 6 mining algorithms for 10+ different cryptocurrencies. If that’s not enough, we’d be happy to also support the ones you want to mine!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title">Our Features</h2>
+                        <p>why you should invest with {{ ucwords(get_settings('web_title')) }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="icon">
+                            <i class="lni-shield"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Data Protection</a></h3>
+                            <p>We support cryptocurrencies that promote privacy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="icon">
+                            <i class="lni-cloud-sync"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">High End Mining Systems</a></h3>
+                            <p> we’re providing some of the highest performing mining systems that exist.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="icon">
+                            <i class="lni-wallet"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Easy Withdrawal</a></h3>
+                            <p> Our Withdrawal process is fast, easy and user friendly. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.8s">
+                        <div class="icon">
+                            <i class="lni-bolt-alt"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">99.9% up time</a></h3>
+                            <p>Our Mining systems are up and running, always ready to deliver the best output. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="1s">
+                        <div class="icon">
+                            <i class="lni-thumbs-up"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Daily Payouts</a></h3>
+                            <p>Your mining outputs will be added to your account daily and automatically</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
+                        <div class="icon">
+                            <i class="lni-timer"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">24/7 Support</a></h3>
+                            <p>Our customer service are ready for you. Questions? Call or Chat with us.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="search-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title"> </h2>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="content">
+            <div class="row"> -->
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div id="tradingview_1b97f"></div>
+                <div class="tradingview-widget-copyright"></div>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+
+
+    <section class="counter-section section-padding" data-stellar-background-ratio="0.5" style=" height: 300px;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget text-center">
+                    <div class="counter">
+                        <div class="icon"><i class="lni-users"></i></div>
+                        <div class="counterUp">6252</div>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget text-center">
+                    <div class="counter">
+                        <div class="icon"><i class="lni-key"></i></div>
+                        <div class="counterUp">3091</div>
+                        <p>investors</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget text-center">
+                    <div class="counter">
+                        <div class="icon"><i class="lni-printer"></i></div>
+                        <div class="counterUp">1200</div>
+                        <p>hardware Sold</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget text-center">
+                    <div class="counter">
+                        <div class="icon"><i class="lni-cup"></i></div>
+                        <div class="counterUp">79</div>
+                        <p>Awards Win</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio-section" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title-header text-center">
+                        <h2 class="section-title">Our Gallery</h2>
+                        <p>Get a view our mining farm setup and system setup</p>
+                    </div>
+                </div>
+                <div class="col-12">
+
+                </div>
+            </div>
+            <div id="portfolio" class="row wow fadeInDown">
+                <div class="col-md-6 col-sm-6 col-lg-4 mix development print">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-1.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-1.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-6 col-sm-6 col-lg-4 mix design print">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-2.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-2.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-6 col-sm-6 col-lg-4 mix development">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-3.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-3.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-6 col-sm-6 col-lg-4 mix development design">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-4.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-4.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-6 col-sm-6 col-lg-4 mix development">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-5.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-5.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-md-6 col-sm-6 col-lg-4 mix print design">
+                    <div class="portfolio-box">
+                        <div class="img-thumb">
+                            <img class="img-fluid" src="{{image_url('gallery/img-6.jpg')}}" alt="">
+                        </div>
+                        <div class="overlay-box text-center">
+                            <a class="lightbox" href="{{image_url('gallery/img-6.jpg')}}">
+                                <i class="lni-zoom-in"></i>
+                            </a>
+                            <h3></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="testimonials" class="owl-carousel">
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="content">
+                                    <p class="description">Happy to purchase hardware from {{ ucwords(get_settings('web_title')) }}, Fast Delivery and at the best online price.</p>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <div class="img-thumb">
+                                    <img src="{{image_url('testimonial/img1.png')}}" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h2><a href="#">Michael Papirov</a></h2>
+                                    <h4><a href="#">Customer</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="content">
+                                    <p class="description"> This unique synergy produces the best experience for those interested in mining and we look forward to having a long and prosperous relationship.</p>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <div class="img-thumb">
+                                    <img src="{{image_url('testimonial/img2.png')}}" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h2><a href="#">Josh Rossi</a></h2>
+                                    <h4><a href="#">investor</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="content">
+                                    <p class="description">It’s good to see that they are an honest cloudmining service which shows their farms openly to the public.</p>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <div class="img-thumb">
+                                    <img src="{{image_url('testimonial/img3.png')}}" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h2><a href="#">Daniel Greem</a></h2>
+                                    <h4><a href="#">investor</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="content">
+                                    <p class="description">Their transparent mining sites and high quality software infrastructure together with our high end mining hardware result in a great and unique product and experience for everybody interested in mining!.</p>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <div class="img-thumb">
+                                    <img src="{{image_url('testimonial/img4.png')}}" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h2><a href="#">Than Nguyen</a></h2>
+                                    <h4><a href="#">investor</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="content">
+                                    <p class="description">the best in class mining service that is supported by our technologically superior mining hardware.</p>
+                                </div>
+                            </div>
+                            <div class="client-info">
+                                <div class="img-thumb">
+                                    <img src="{{image_url('testimonial/img5.png')}}" alt="">
+                                </div>
+                                <div class="info-text">
+                                    <h2><a href="#">David Rugani</a></h2>
+                                    <h4><a href="#">Customer</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" data-widget-bg-color="#FFF" data-width="650" data-height="855" data-show-date data-title-font-size="18" data-intro-font-size="16" data-show-upper-intro data-show-divider data-category="news" data-section="all" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> <span style="color:#999999;display:inline-block;margin-top:10px;font-size:12px;"> </span> <img style="width:87px; height:14px;" src="https://www.fxempire.com/logo-full.svg" alt="FX Empire logo" /> </a> <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
+                </div>
+                <div class="col-md-6">
+                    <a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" data-widget-bg-color="#FFF" data-width="650" data-height="855" data-show-date data-title-font-size="18" data-intro-font-size="16" data-show-upper-intro data-show-divider data-category="news" data-section="cryptocurrencies" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> <span style="color:#999999;display:inline-block;margin-top:10px;font-size:12px;"> </span> <img style="width:87px; height:14px;" src="https://www.fxempire.com/logo-full.svg" alt="FX Empire logo" /> </a> <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        new TradingView.MediumWidget(
+            {
+                "symbols": [
+                    [
+                        "BTC/USD",
+                        "BITSTAMP:BTCUSD|12m"
+                    ],
+                    [
+                        "ETH/USD",
+                        "COINBASE:ETHUSD|12m"
+                    ],
+                    [
+                        "LTC/USD",
+                        "COINBASE:LTCUSD|12m"
+                    ]
+                ],
+                "chartOnly": false,
+                "width": "100%",
+                "height": "570",
+                "locale": "en",
+                "colorTheme": "dark",
+                "gridLineColor": "#2a2e39",
+                "trendLineColor": "#1976d2",
+                "fontColor": "#787b86",
+                "underLineColor": "rgba(55, 166, 239, 0.15)",
+                "isTransparent": false,
+                "autosize": true,
+                "container_id": "tradingview_1b97f"
+            }
+        );
+    </script>
+
 @endsection

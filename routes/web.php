@@ -12,4 +12,6 @@
 */
 
 Route::get("/", "MyController@index")->name('index');
+Route::get("about", "MyController@about")->name('about');
+Route::get("gallery", "MyController@gallery")->name('gallery');
 

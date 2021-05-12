@@ -436,7 +436,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #page-banner-area {
-  background: url(../../image/NY-power-plant-mining-farm.jpg) no-repeat;
+  background: url(../../images/NY-power-plant-mining-farm.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -3916,7 +3916,7 @@ textarea {
 }
 
 .counter-section {
-  background: url(../img/background/counter-bg.jpg);
+  background: url(../../images/background/counter-bg.jpg);
   overflow: hidden;
   position: relative;
 }

@@ -4,6 +4,8 @@ namespace App\Http\Controllers\account;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
 {
@@ -18,7 +20,11 @@ class LoginController extends Controller
 
         $data['page_title'] = "Login";
 
-        return view('account.login',$data);
+        if (Auth::user()){
+            return redirect()->intended('user/dashboard');
+        }else{
+            return view('account.login',$data);
+        }
     }
 
     /**
@@ -40,6 +46,34 @@ class LoginController extends Controller
     public function store(Request $request)
     {
         //
+
+        $validator = Validator::make($request->all(),[
+            'email_address'=>'required|email',
+            'password'=>'required'
+        ]);
+
+        if ($validator->fails()){
+            $msg = (count($validator->errors()->all()) == 1) ? 'An error occurred' : 'Some error(s) occurred';
+
+            foreach ($validator->errors()->all() as $value){
+                $msg.='<p>'.$value.'</p>';
+            }
+
+            return redirect()->back()->with('flash_error',$msg)->withInput();
+        }
+
+        $log = Auth::attempt([
+            'email_address'=>$request->email_address,
+            'password'=>$request->password
+        ]);
+
+        if ($log){
+            return redirect()->intended('user/dashboard');
+        }else{
+            return back()->with("flash_error", 'Invalid login details please try again');
+        }
+
+
     }
 
     /**

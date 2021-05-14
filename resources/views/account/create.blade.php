@@ -22,25 +22,27 @@
                         <h3>
                             Create Your account
                         </h3>
+                        @include('flash')
                         <form class="login-form" method="post" action="">
+                            @csrf
                             <div class="form-group">
                                 <div class="input-icon">
                                     <i class="lni-envelope"></i>
-                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required id='mail'>
+                                    <input type="email" value="{{old('email_address',request('email_address'))}}" class="form-control" name="email_address" placeholder="Email Address" required id='mail'>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="input-icon">
                                     <i class="lni-user"></i>
-                                    <input type="text" class="form-control" name="Full Name" placeholder="Full Name" required>
+                                    <input type="text" class="form-control" name="full_name" placeholder="Full Name" value="{{old('full_name',request('full_name'))}}" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="input-icon">
                                     <i class="lni-lock"></i>
-                                    <input type="password" class="form-control" placeholder="Password" name="pass" required>
+                                    <input type="password" class="form-control" placeholder="Password" name="password" required>
                                 </div>
                             </div>
                             <div class="form-group">

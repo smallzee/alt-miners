@@ -70,3 +70,8 @@ function get_all_countries(){
     $data = \App\Countries::orderBy('country_name')->get();
     return $data;
 }
+
+function get_country($id,$value){
+    $data = \App\Countries::where('id',$id)->first();
+    return $data[$value];
+}

@@ -21,7 +21,9 @@
                         <h3>
                             Login
                         </h3>
-                        <form class="login-form" action="" method="POST">
+                        @include('flash')
+                        <form class="login-form" action="" method="post">
+                            @csrf
                             <div class="form-group">
                                 <div class="input-icon">
                                     <i class="lni-users"></i>
@@ -37,7 +39,7 @@
                             <div class="form-group">
                                 <input type="checkbox" name="rememberme" value=""> Keep Me Signed In
                             </div>
-                            <button class="btn btn-common log-btn" type="submit" name="login_btn">Submit</button>
+                            <button class="btn btn-common log-btn" type="submit">Submit</button>
                         </form>
                         <ul class="form-links">
                             <li class="text-center"><a href="{{url('account/create')}}">Don't have an account?</a> | <a href="" id='res' style="font-weight:bold ">Reset password</a></li>

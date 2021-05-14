@@ -21,3 +21,28 @@ Route::group(['namespace'=>'account','prefix'=>'account'], function (){
     Route::resource("create", "CreateController");
 });
 
+//user route
+Route::group(['namespace'=>'user','prefix' => 'user'],function (){
+
+
+    Route::middleware(['isStatus'])->group(function (){
+        Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
+    });
+});
+
+// admin route
+Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
+    Route::resource('/', "LoginController");
+
+    Route::middleware(['isAdmin', 'isStatus'])->group(function (){
+
+        Route::get('/dashboard', "DashboardController@dashboard")->name('dashboard');
+
+        Route::get('/admin', "AdminController@admin")->name('admin');
+
+
+        // logout
+        Route::get('/logout', "AdminController@logout")->name('logout');
+
+    });
+});

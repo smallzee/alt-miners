@@ -47,10 +47,17 @@
 
                 </div>
                 <div class="col-lg-5 col-md-4 col-xs-12">
-
                     <div class="header-top-right float-right">
+
+                    @if(auth()->user())
+                            <a href="{{url('user/dashboard')}}" class="header-top-button"><i class="lni-user"></i> Dashboard</a>
+                    @else
+
+
                         <a href="{{url('account/login')}}" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
                         <a href="{{url('account/create')}}" class="header-top-button"><i class="lni-pencil"></i> Create Account</a>
+
+                    @endif
 
                     </div>
                 </div>

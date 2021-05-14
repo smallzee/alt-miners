@@ -36,10 +36,28 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
 
     Route::middleware(['isAdmin', 'isStatus'])->group(function (){
 
-        Route::get('/dashboard', "DashboardController@dashboard")->name('dashboard');
+        Route::get('/dashboard', "AdminController@dashboard")->name('dashboard');
 
         Route::get('/admin', "AdminController@admin")->name('admin');
 
+
+        Route::get('/users', "UserController@users")->name('user');
+
+        // role
+        Route::get('/role', "RoleController@role")->name('role');
+        Route::get('/edit-role/{id}', "RoleController@edit_role")->name('edit_role');
+        Route::post('/update_role', "RoleController@update_role")->name('update_role');
+        Route::post('/update_user_role', "RoleController@update_user_role")->name('update_user_role');
+
+        // country
+        Route::get('/country', "CountryController@country")->name('country');
+
+        Route::post('/create_new_role', "RoleController@create_new_role")->name('create_new_role');
+        Route::get('/change-role/{id}', "RoleController@change_role")->name('change_role');
+
+        // settings
+        Route::get('/settings', "SettingsController@settings")->name('settings');
+        Route::post('/update_settings', "SettingsController@update_settings")->name('update_settings');
 
         // logout
         Route::get('/logout', "AdminController@logout")->name('logout');

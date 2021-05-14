@@ -14,9 +14,17 @@ class PricingController extends Controller
     public function cloud_pricing(){
         $data['page_title'] = "Cloud Pricing";
 
-        $data['cloud_pricing'] = Pricing::where('type',1)->orderBy('id','desc')->get();
+        $data['cloud_pricing'] = Pricing::where('pricing_type',1)->orderBy('id','desc')->get();
 
         return view('admin.cloud-pricing',$data);
+    }
+
+    public function doge_pricing(){
+        $data['page_title'] = "Doge Pricing";
+
+        $data['cloud_pricing'] = Pricing::where('pricing_type',2)->orderBy('id','desc')->get();
+
+        return view('admin.doge-pricing',$data);
     }
 
     public function add_pricing(){
@@ -27,7 +35,7 @@ class PricingController extends Controller
     public function create_new_cloud_pricing(Request $request){
 
         $validator = Validator::make($request->all(),[
-            'name'=>'required|unique:cloud_pricing|max:50|min:3',
+            'name'=>'required|unique:pricing|max:50|min:3',
             'description'=>'required',
             'daily_return'=>'required|numeric',
             'duration'=>'required|numeric',
@@ -55,7 +63,7 @@ class PricingController extends Controller
         $pricing->duration = $request->duration;
         $pricing->min_amount = $request->minimum_amount;
         $pricing->max_amount = $request->maximum_amount;
-        $pricing->type = $request->pricing_type;
+        $pricing->pricing_type = $request->pricing_type;
 
         if ($pricing->save()){
             return redirect()->back()->with('flash_info','Pricing has been added successful');

@@ -95,7 +95,7 @@
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="{{url('doge_pricing')}}"  aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link " href="{{url('doge-pricing')}}"  aria-haspopup="true" aria-expanded="false">
                             Dogecoin Mining Pricing <i class="fa fa-angle-down"></i>
                         </a>
 
@@ -133,7 +133,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{url('pricing')}}">Cloud Pricing</a>
+                <a href="{{url('cloud-pricing')}}">Cloud Pricing</a>
             </li>
             <li>
                 <a href="{{url('gallery')}}">

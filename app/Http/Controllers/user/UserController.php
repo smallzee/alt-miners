@@ -8,4 +8,10 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     //
+
+    public function dashboard(){
+        $data['page_title'] = "Dashboard";
+
+        return view('user.dashboard',$data);
+    }
 }

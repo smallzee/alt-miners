@@ -15,7 +15,9 @@ Route::get("/", "MyController@index")->name('index');
 Route::get("about", "MyController@about")->name('about');
 Route::get("gallery", "MyController@gallery")->name('gallery');
 Route::get("faq", "MyController@faq")->name('faq');
+Route::get("contact", "MyController@contact")->name('contact');
 Route::get("cloud-pricing", "MyController@cloud_pricing")->name('cloud_pricing');
+Route::get("doge-pricing", "MyController@doge_pricing")->name('doge_pricing');
 
 Route::group(['namespace'=>'account','prefix'=>'account'], function (){
     Route::resource("login", "LoginController");

@@ -29,10 +29,23 @@ class MyController extends Controller
         return view('faq',$data);
     }
 
+    public function contact(){
+        $data['page_title'] = "Contact";
+
+        return view('contact',$data);
+    }
+
     public function cloud_pricing(){
         $data['page_title'] = "Cloud Pricing";
-        $data['cloud_pricing'] = Pricing::all();
+        $data['cloud_pricing'] = Pricing::where('pricing_type',1)->orderBy('min_amount')->get();
 
         return view('cloud-pricing',$data);
+    }
+
+    public function doge_pricing(){
+        $data['page_title'] = "Doge Pricing";
+        $data['doge_pricing'] = Pricing::where('pricing_type',2)->orderBy('min_amount')->get();
+
+        return view('doge-pricing',$data);
     }
 }

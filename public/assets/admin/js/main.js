@@ -26,7 +26,7 @@ $('.select2').select2();
 $(function () {
     // Replace the <textarea id="editor1"> with a CKEditor
     // instance, using default configuration.
-    CKEDITOR.replace('description');
+    //CKEDITOR.replace('description');
     //bootstrap WYSIHTML5 - text editor
     //$('#description').wysihtml5();
 });

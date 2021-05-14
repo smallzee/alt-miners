@@ -4117,7 +4117,7 @@ textarea {
 }
 
 .pricing-table .plan-info {
-  background: url(../img/pricing/pricing-bg.jpg);
+  background: url(../../images/pricing/pricing-bg.jpg);
   position: relative;
   padding: 15px 30px;
   z-index: 99;

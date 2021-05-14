@@ -89,7 +89,7 @@
 
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="{{url('pricing')}}"  aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link " href="{{url('cloud-pricing')}}"  aria-haspopup="true" aria-expanded="false">
                             Cloud Pricing <i class="fa fa-angle-down"></i>
                         </a>
 

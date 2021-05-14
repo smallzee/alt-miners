@@ -122,6 +122,27 @@
                     </a>
                 </li>
 
+                <li>
+                    <a href="{{url('admin/add-pricing')}}">
+                        <i class="fa fa-plus text-primary "></i>
+                        <span>Add New Pricing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{url('admin/cloud-pricing')}}">
+                        <i class="fa fa-cloud text-primary "></i>
+                        <span>All Cloud Pricing</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="{{url('admin/doge-pricing')}}">
+                        <i class="fa fa-cloud text-primary "></i>
+                        <span>All Doge Pricing</span>
+                    </a>
+                </li>
+
 
                 <li class="header">USERS</li>
 

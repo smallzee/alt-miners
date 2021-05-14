@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Pricing;
 use Illuminate\Http\Request;
 
 class MyController extends Controller
@@ -26,5 +27,12 @@ class MyController extends Controller
     public function faq(){
         $data['page_title'] = "FAQ";
         return view('faq',$data);
+    }
+
+    public function cloud_pricing(){
+        $data['page_title'] = "Cloud Pricing";
+        $data['cloud_pricing'] = Pricing::all();
+
+        return view('cloud-pricing',$data);
     }
 }

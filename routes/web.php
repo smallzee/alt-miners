@@ -15,6 +15,7 @@ Route::get("/", "MyController@index")->name('index');
 Route::get("about", "MyController@about")->name('about');
 Route::get("gallery", "MyController@gallery")->name('gallery');
 Route::get("faq", "MyController@faq")->name('faq');
+Route::get("cloud-pricing", "MyController@cloud_pricing")->name('cloud_pricing');
 
 Route::group(['namespace'=>'account','prefix'=>'account'], function (){
     Route::resource("login", "LoginController");
@@ -23,7 +24,6 @@ Route::group(['namespace'=>'account','prefix'=>'account'], function (){
 
 //user route
 Route::group(['namespace'=>'user','prefix' => 'user'],function (){
-
 
     Route::middleware(['isStatus'])->group(function (){
         Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
@@ -48,6 +48,12 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/edit-role/{id}', "RoleController@edit_role")->name('edit_role');
         Route::post('/update_role', "RoleController@update_role")->name('update_role');
         Route::post('/update_user_role', "RoleController@update_user_role")->name('update_user_role');
+
+        // pricing
+        Route::get('/add-pricing', "PricingController@add_pricing")->name('add_pricing');
+        Route::get('/cloud-pricing', "PricingController@cloud_pricing")->name('cloud_pricing');
+        Route::get('/doge-pricing', "PricingController@doge_pricing")->name('doge_pricing');
+        Route::post('/create_new_cloud_pricing', "PricingController@create_new_cloud_pricing")->name('create_new_cloud_pricing');
 
         // country
         Route::get('/country', "CountryController@country")->name('country');

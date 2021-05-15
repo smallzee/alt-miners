@@ -59,6 +59,7 @@ class Kernel extends HttpKernel
         'isStatus' => \App\Http\Middleware\IsStatus::class,
         'isUser' => \App\Http\Middleware\IsUser::class,
         'isAdmin' => \App\Http\Middleware\IsAdmin::class,
+        'isKycVerified' => \App\Http\Middleware\IsKycVerified::class,
         'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,

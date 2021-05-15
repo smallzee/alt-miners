@@ -41,7 +41,7 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{url('assets/admin/css/style.css')}}">
-    <link rel="icon" href="{{image_url('logo/logo_01.png')}}">
+    <link rel="icon" href="{{image_url('logo.png')}}">
 </head>
 <body class="hold-transition skin-blue sidebar-mini" style="font-size: 15px;">
 
@@ -151,6 +151,37 @@
                         <i class="fa fa-user text-primary "></i>
                         <span> &nbsp; All Users</span>
                     </a>
+                </li>
+
+                <li >
+                    <a href="{{url('admin/kyc')}}">
+                        <i class="fa fa-user text-primary "></i>
+                        <span> &nbsp; All KYC Type</span>
+                    </a>
+                </li>
+
+                <li class="treeview">
+                    <a href="#">
+                        <i class="fa fa-user text-primary"></i>
+                        <span> &nbsp; All KYC Users</span>
+                        <span class="pull-right-container">
+                          <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+
+                        @foreach(array('3'=>'Approved KYC','2'=>'Rejected KYC', '1'=>'Processing KYC') as $key => $value)
+
+                            <li>
+                                <a href="{{url('admin/kyc-users/'.$key)}}">
+                                    <i class="fa fa-circle-o-notch"></i>
+                                    <span>{{ $value }}</span>
+                                </a>
+                            </li>
+
+                        @endforeach
+
+                    </ul>
                 </li>
 
                 <li class="header">SETTINGS</li>

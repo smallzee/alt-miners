@@ -17,7 +17,7 @@ class IsAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if(@Auth::user()->role_id > 1) {
+        if(Auth::user()->role_id > 1) {
             return $next($request);
         }else{
             return redirect('/admin')->with('flash_error','Please login to continue');

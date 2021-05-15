@@ -28,7 +28,16 @@ Route::group(['namespace'=>'account','prefix'=>'account'], function (){
 Route::group(['namespace'=>'user','prefix' => 'user'],function (){
 
     Route::middleware(['isStatus'])->group(function (){
-        Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
+
+        Route::get("kyc", "KycController@kyc")->name('kyc');
+        Route::post("upload_kyc", "KycController@upload_kyc")->name('upload_kyc');
+
+        Route::middleware(['isKycVerified',])->group(function (){
+            Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
+
+            // logout
+            Route::get('/logout', "UserController@logout")->name('logout');
+        });
     });
 });
 
@@ -56,6 +65,16 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/cloud-pricing', "PricingController@cloud_pricing")->name('cloud_pricing');
         Route::get('/doge-pricing', "PricingController@doge_pricing")->name('doge_pricing');
         Route::post('/create_new_cloud_pricing', "PricingController@create_new_cloud_pricing")->name('create_new_cloud_pricing');
+
+
+        // kyc
+        Route::get('/kyc', "KycController@kyc")->name('kyc');
+        Route::get('/edit-kyc/{id}', "KycController@edit_kyc")->name('edit_kyc');
+        Route::get('/view-user-kyc/{user_id}', "KycController@view_user_kyc")->name('view_user_kyc');
+        Route::get('/kyc-users/{kyc_status}', "KycController@kyc_users")->name('kyc_users');
+        Route::post('/create_new_kyc_type', "KycController@create_new_kyc_type")->name('create_new_kyc_type');
+        Route::post('/confirm_user_kyc', "KycController@confirm_user_kyc")->name('confirm_user_kyc');
+        Route::post('/edit_kyc_type', "KycController@edit_kyc_type")->name('edit_kyc_type');
 
         // country
         Route::get('/country', "CountryController@country")->name('country');

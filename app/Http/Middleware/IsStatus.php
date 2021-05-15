@@ -17,7 +17,7 @@ class IsStatus
      */
     public function handle(Request $request, Closure $next)
     {
-        if(@Auth::user()->status == 1) {
+        if(Auth::user()->status == 1) {
             return $next($request);
         }else{
             Auth::guard()->logout();

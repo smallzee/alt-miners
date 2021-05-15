@@ -11,6 +11,11 @@ class PricingController extends Controller
 {
     //
 
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function cloud_pricing(){
         $data['page_title'] = "Cloud Pricing";
 

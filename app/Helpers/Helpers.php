@@ -88,3 +88,23 @@ function status($status){
         return "In-active";
     }
 }
+
+function get_kyc_type($id){
+    $data = \App\Kyc_Type::where('id',$id)->first();
+    return  $data['name'];
+}
+
+function kyc_status($status){
+    if ($status == 1){
+        return "Processing";
+    }elseif ($status == 2){
+        return "Rejected";
+    }elseif ($status == 3){
+        return "Approved";
+    }
+}
+
+function get_all_kyc_user($kyc_status){
+    $data = \App\User::where('kyc_status',$kyc_status)->count();
+    return $data;
+}

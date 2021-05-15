@@ -10,6 +10,11 @@ class CountryController extends Controller
 {
     //
 
+    public function __construct()
+    {
+        $this->middleware('admin');
+    }
+
 
     public function country(){
         $data['page_title'] = "All Countries";

@@ -35,6 +35,8 @@ Route::group(['namespace'=>'user','prefix' => 'user'],function (){
         Route::middleware(['isKycVerified',])->group(function (){
             Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
 
+            Route::get('/referral', "ReferralController@referral")->name('referral');
+            Route::get('/deposit', "DepositController@deposit")->name('deposit');
             // logout
             Route::get('/logout', "UserController@logout")->name('logout');
         });

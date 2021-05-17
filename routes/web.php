@@ -36,7 +36,23 @@ Route::group(['namespace'=>'user','prefix' => 'user'],function (){
             Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
 
             Route::get('/referral', "ReferralController@referral")->name('referral');
+
+
             Route::get('/deposit', "DepositController@deposit")->name('deposit');
+            Route::get('/payment', "DepositController@payment")->name('payment');
+
+            Route::post('/create_deposit', "DepositController@create_deposit")->name('create_deposit');
+             Route::post('/create_new_payment', "DepositController@create_new_payment")->name('create_new_payment');
+
+            Route::post('/update_change_password', "UserController@update_change_password")->name('update_change_password');
+            Route::get('/change-password', "UserController@change_password")->name('change_password');
+            Route::get('/my-orders', "UserController@my_orders")->name('my_orders');
+            Route::get('/profile', "UserController@profile")->name('profile');
+            Route::post('/update_profile', "UserController@update_profile")->name('update_settings');
+
+            Route::get('/contact-support', "UserController@contact_support")->name('contact_support');
+            Route::post('/create_contact_support', "UserController@create_contact_support")->name('create_contact_support');
+
             // logout
             Route::get('/logout', "UserController@logout")->name('logout');
         });
@@ -68,6 +84,10 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/doge-pricing', "PricingController@doge_pricing")->name('doge_pricing');
         Route::post('/create_new_cloud_pricing', "PricingController@create_new_cloud_pricing")->name('create_new_cloud_pricing');
 
+        // deposit
+        Route::get('/deposit', "DepositController@deposit")->name('deposit');
+        Route::get('/deposit-details/{deposit}', "DepositController@deposit_details")->name('deposit_details');
+        Route::post('/deposit_confirmation', "DepositController@deposit_confirmation")->name('deposit_confirmation');
 
         // kyc
         Route::get('/kyc', "KycController@kyc")->name('kyc');

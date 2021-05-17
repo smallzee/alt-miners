@@ -29,15 +29,17 @@
 
     <script src="{{url('assets/libs/js/jquery-min.js')}}"></script>
     <script src="{{url('assets/libs/js/tradingview.js')}}"></script>
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
     <script type="text/javascript" src="../s3.tradingview.com/tv.js"></script>
 </head>
 <body>
 
 <header id="header-wrap">
-
+    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,dogecoin,ripple,litecoin,tron" currency="usd" background-color="#fff" locale="en"></coingecko-coin-price-marquee-widget>
     <div class="top-bar">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-7 col-md-8 col-xs-12">
 
                     <ul class="links clearfix">

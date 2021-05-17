@@ -108,3 +108,36 @@ function get_all_kyc_user($kyc_status){
     $data = \App\User::where('kyc_status',$kyc_status)->count();
     return $data;
 }
+
+function get_btc_live_amount($amount){
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => "https://blockchain.info/tobtc?currency=USD&value=".$amount,
+        CURLOPT_SSL_VERIFYPEER => false,
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_HTTPHEADER => [
+            "accept: application/json",
+            "cache-control: no-cache"
+        ],
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+    return $response;
+}
+
+function balance($value,$is_user = FALSE){
+    if ($is_user ==  FALSE){
+        $user_id = auth()->user()->id;
+    }else{
+        $user_id = $is_user;
+    }
+
+    $data = \App\Wallet::where('user_id',$user_id)->first();
+    return $data[$value];
+}
+
+function user_details($id,$value){
+    $data = \App\User::where('id',$id)->first();
+    return $data[$value];
+}

@@ -184,6 +184,14 @@
                     </ul>
                 </li>
 
+                <li >
+                    <a href="{{url('admin/deposit')}}">
+                        <i class="fa fa-credit-card text-primary "></i>
+                        <span>All Users Deposited</span>
+                    </a>
+                </li>
+
+
                 <li class="header">SETTINGS</li>
 
                 <li>

@@ -16,6 +16,11 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+    <script src="{{url('assets/libs/js/jquery-min.js')}}"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 
@@ -131,7 +136,8 @@
             <div class="container">
                 <div class="mma">
                     <div class="row">
-                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8"><marquee style="color:#ffb345;font-size:25px;">Introducing Dogecoin Mining. In order to secure a better future for our members in the cryptocurrency world, {{ get_settings('web_title') }} is engaging in DOGECOIN Mining. <a href="user_dashboard.php?p=dogecoin_mining">Click here</a> to join in creating wealth with Dogecoin.</marquee></div>
+                        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-8">
+                            <marquee style="color:#ffb345;font-size:25px;">Introducing Dogecoin Mining. In order to secure a better future for our members in the cryptocurrency world, {{ get_settings('web_title') }} is engaging in DOGECOIN Mining. <a href="user_dashboard.php?p=dogecoin_mining">Click here</a> to join in creating wealth with Dogecoin.</marquee></div>
                         <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
                             <div class="limiter">
                                 <p><a href="#" class="nav-notification message-toggle">
@@ -169,18 +175,18 @@
                     <a href="{{url('user/contact-support')}}"><span class="fa fa-comments"></span> <b class="nav-text">Customer Support</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="{{url('user/password')}}"><span class="fa fa-th-list"></span> <b class="nav-text">Change Password</b></a>
+                    <a class="navbar-link" href="{{url('user/change-password')}}"><span class="fa fa-th-list"></span> <b class="nav-text">Change Password</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=my-orders"><span class="fa fa-address-book"></span>
+                    <a class="navbar-link" href="{{url('user/my-orders')}}"><span class="fa fa-address-book"></span>
                         <b class="nav-text">My orders</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=dogecoin_mining"><span class="fa fa-flash"></span>
+                    <a class="navbar-link" href="{{url('user/mining/dogecoin')}}"><span class="fa fa-flash"></span>
                         <b class="nav-text">Mine Dogecoin</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=buy_hashpower"><span class="fa fa-flash"></span>
+                    <a class="navbar-link" href="{{url('user/mining/buy-haspower')}}"><span class="fa fa-flash"></span>
                         <b class="nav-text">Buy Hashpower</b></a>
                 </li>
 
@@ -193,23 +199,17 @@
                         <b class="nav-text">Deposit</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=withdrawal"><span class="fa fa-shield"></span>
+                    <a class="navbar-link" href="{{url('user/withdrawal')}}"><span class="fa fa-shield"></span>
                         <b class="nav-text">Withdrawal</b></a>
                 </li>
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=withdrawal_history"><span class="fa fa-shield"></span>
+                    <a class="navbar-link" href="{{url('user/withdrawal-history')}}"><span class="fa fa-shield"></span>
                         <b class="nav-text">Withdrawal History</b></a>
                 </li>
 
-
                 <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=kyc"><span class="fa fa-shield"></span>
-                        <b class="nav-text">KYC</b></a>
-                </li>
-
-                <li>
-                    <a class="navbar-link" href="user_dashboard.php?p=settings"><span class="fa fa-shield"></span>
-                        <b class="nav-text">Settings</b></a>
+                    <a class="navbar-link" href="{{url('user/profile')}}"><span class="fa fa-shield"></span>
+                        <b class="nav-text">My Profile</b></a>
                 </li>
 
                 <li class="emptys">&nbsp;</li>
@@ -219,7 +219,11 @@
     </nav>
 </header>
 
+
+@include('flash')
+
 @yield('content')
+
 
 <div id="footer-container">
     <footer class="container">
@@ -240,9 +244,8 @@
             </p>
         </div>
     </footer>
-</div></div>
+</div>
 
-<script src="{{url('assets/libs/js/jquery-min.js')}}"></script>
 <script src="{{url('assets/libs/js/bootstrap.min.js')}}"></script>
 <script src="{{url('assets/user/js/bootstrap-select.js')}}"></script>
 <script src="{{url('assets/user/js/everybody.js')}}"></script>
@@ -251,5 +254,19 @@
 <script src="{{url('assets/user/js/moment.js')}}"></script>
 <script src="{{url('assets/user/js/marked.js')}}"></script>
 <script src="{{url('assets/user/js/js.js')}}"></script>
+
+<script>
+    function copy_keyboard() {
+        var copyText = document.getElementById("myInput");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999)
+        document.execCommand("copy");
+        alert("Copied the text: " + copyText.value);
+    }
+
+    $(function () {
+        $("#datatable").dataTable();
+    })
+</script>
 </body>
 </html>

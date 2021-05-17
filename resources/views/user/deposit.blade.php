@@ -8,17 +8,20 @@
             <h2>Enter the USD capital</h2>
             <div class="card-group">
 
-                <form method="POST" action="">
+                <form method="post" action="{{url('user/create_deposit')}}">
+                    @csrf
                     <div class="form-group">
-                        <input type="text" name="how-much" placeholder="Investment capital(USD)" class="form-control">
+                        <input type="text" name="amount" required placeholder="Investment capital(USD)" class="form-control">
                     </div>
 
                     <div class="form-group">
                         <label for="cn">Choose mining coin</label>
                         <select name="currency" class="form-control">
-                            <option value="BITCOIN" selected="selected">BITCOIN</option>
-                            <option value="USDT" selected="selected">ETH/Litecoin/USDT</option>
-                            <option value="DOGECOIN" selected="selected">DOGECOIN</option>
+                            <option value="btc">Bitcoin</option>
+                            <option value="usdt">USDT</option>
+                            <option value="litcoin">Litcoin</option>
+                            <option value="eth">Ethereum</option>
+                            <option value="dogecoin">Dogecoin</option>
                         </select>
                     </div>
 

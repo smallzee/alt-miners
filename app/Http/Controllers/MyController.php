@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mining;
 use App\Pricing;
+use App\Wallet;
 use Illuminate\Http\Request;
 
 class MyController extends Controller
@@ -47,5 +49,29 @@ class MyController extends Controller
         $data['doge_pricing'] = Pricing::where('pricing_type',2)->orderBy('min_amount')->get();
 
         return view('doge-pricing',$data);
+    }
+
+    public function webhook_daily_profit(){
+
+
+        $mining = Mining::where('is_active',1)->get();
+
+        foreach ($mining as $value){
+
+            $mine = Mining::find($value->id);
+            $profit = $value->amount / 100 * $value->daily_return_percentage;
+            $mine->daily_profit = $mine->daily_profit + $profit;
+            $mine->save();
+
+            if (time() >= $value->duration){
+                $mine->is_active = 0;
+                $mine->save();
+
+                $mine->user->wallet->balance = $mine->user->wallet->balance + $value->daily_profit;
+                $mine->user->wallet->save();
+            }
+
+        }
+
     }
 }

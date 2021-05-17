@@ -15517,3 +15517,6 @@ be a descendant of the grid when it is being dragged.
     color: #666;
 }
 
+.hide{
+    display: none;
+}

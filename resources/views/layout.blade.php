@@ -74,7 +74,7 @@
                     <span class="navbar-toggler-icon"></span>
                     <span class="lin-menu"></span>
                 </button>
-                <a class="navbar-brand" href="{{url('/')}}"><img src="{{image_url('logo.png')}}" alt="" style="height:60px; width:100px;"></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{image_url('logo.png')}}" alt="" style="height:60px; width:150px;"></a>
             </div>
             <div class="collapse navbar-collapse" id="main-navbar">
                 <ul class="navbar-nav mr-auto w-100 justify-content-center">
@@ -354,7 +354,7 @@
 <script type="text/javascript">
     (function () {
         var options = {
-            whatsapp: "+447503350804", // WhatsApp number
+            whatsapp: "{{get_settings('whatsapp_contact')}}", // WhatsApp number
             call_to_action: "Message us", // Call to action
             position: "left", // Position may be 'right' or 'left'
         };

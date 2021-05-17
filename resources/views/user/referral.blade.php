@@ -2,8 +2,6 @@
 
 @section('content')
 
-    <div id="main-container">
-        <div class="container-fluid">
 
             <div class="card-group">
 
@@ -23,12 +21,14 @@
                         <tr>
                             <th>S/N</th>
                             <th>Full Name</th>
+                            <th>Email Address</th>
                         </tr>
                         </thead>
                         <tfoot>
                         <tr>
                             <th>S/N</th>
                             <th>Full Name</th>
+                            <th>Email Address</th>
                         </tr>
                         </tfoot>
                         <tbody>
@@ -37,6 +37,7 @@
                                 <tr>
                                     <td>{{$sn++}}</td>
                                     <td>{{ $value->full_name }}</td>
+                                    <td>{{$value->email_address}}</td>
                                 </tr>
                             @endforeach
                         </tbody>
@@ -44,8 +45,7 @@
                 </div>
 
             </div>
-        </div>
-    </div>
+
 
 
 @endsection

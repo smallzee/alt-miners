@@ -46,7 +46,7 @@ class UserController extends Controller
                 $msg.='<p>'.$value.'</p>';
             }
 
-            return redirect()->back()->with('alert_error',$msg)->withInput();
+            return redirect()->back()->with('flash_error',$msg)->withInput();
         }
 
         $name = \auth()->user()->full_name;
@@ -56,7 +56,7 @@ class UserController extends Controller
 
         Mail::to(get_settings('official_email'))->queue( new SendSupportMail($name,$email_address,$message,$subject));
 
-        return redirect()->back()->with('alert_success','Thanks for contacting us, we will get back to you shortly');
+        return redirect()->back()->with('flash_success','Thanks for contacting us, we will get back to you shortly');
     }
 
     public function change_password(){
@@ -79,25 +79,25 @@ class UserController extends Controller
                 $msg.='<p>'.$value.'</p>';
             }
 
-            return redirect()->back()->with('alert_error',$msg)->withInput();
+            return redirect()->back()->with('flash_error',$msg)->withInput();
         }
 
         $old_password = Hash::make($request->old_password);
 
 
         if ($old_password != \auth()->user()->password ){
-            return redirect()->back()->with('alert_error','Invalid old password entered, please check and try again')->withInput();
+            return redirect()->back()->with('flash_error','Invalid old password entered, please check and try again')->withInput();
         }
 
         if ($request->confirm_new_password != $request->new_password){
-            return redirect()->back()->with('alert_error','Confirm new password did not match new password')->withInput();
+            return redirect()->back()->with('flash_error','Confirm new password did not match new password')->withInput();
         }
 
         $user = User::findOrFail(\auth()->user()->id);
         $user->password = Hash::make($request->new_password);
 
         if ($user->save()){
-            return redirect()->back()->with('alert_success','Your password has been changed successfully');
+            return redirect()->back()->with('flash_success','Your password has been changed successfully');
         }
     }
 
@@ -131,7 +131,7 @@ class UserController extends Controller
                 $msg.='<p>'.$value.'</p>';
             }
 
-            return redirect()->back()->with('alert_error',$msg)->withInput();
+            return redirect()->back()->with('flash_error',$msg)->withInput();
         }
 
        
@@ -144,14 +144,14 @@ class UserController extends Controller
         $user->wallet_address = $request->wallet_address;
 
         if ($user->save()){
-            return redirect()->back()->with('alert_success','Your profile has been updated successfully');
+            return redirect()->back()->with('flash_success','Your profile has been updated successfully');
         }
     }
 
     public function logout()
     {
         Auth::guard()->logout();
-        return redirect('account/login')->with('alert_info','You have logged out successfully');
+        return redirect('account/login')->with('flash_info','You have logged out successfully');
     }
 
 }

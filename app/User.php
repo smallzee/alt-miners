@@ -10,6 +10,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+
+
     /**
      * The attributes that are mass assignable.
      *
@@ -39,6 +41,24 @@ class User extends Authenticatable
 
     public function deposits(){
         return $this->hasMany(Deposit::class,'user_id','id');
+    }
+
+
+    function referrals(){
+        return $this->hasMany(User::class,'referral_user_id','id')->orderBy('id','DESC');
+    }
+
+    function withdrawals(){
+        return $this->hasMany(Withdrawal::class,'user_id','id')->orderBy('id','DESC');
+    }
+
+    function mining(){
+        return $this->hasMany(Mining::class,'user_id','id')->orderBy('id','desc');
+    }
+
+
+    function wallet(){
+        return $this->hasOne(Wallet::class,'user_id','id');
     }
 
 }

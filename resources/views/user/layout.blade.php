@@ -199,17 +199,16 @@
                         <b class="nav-text">Deposit</b></a>
                 </li>
                 <li>
+                    <a class="navbar-link" href="{{url('user/profile')}}"><span class="fa fa-shield"></span>
+                        <b class="nav-text">My Profile</b></a>
+                </li>
+                <li>
                     <a class="navbar-link" href="{{url('user/withdrawal')}}"><span class="fa fa-shield"></span>
                         <b class="nav-text">Withdrawal</b></a>
                 </li>
                 <li>
                     <a class="navbar-link" href="{{url('user/withdrawal-history')}}"><span class="fa fa-shield"></span>
                         <b class="nav-text">Withdrawal History</b></a>
-                </li>
-
-                <li>
-                    <a class="navbar-link" href="{{url('user/profile')}}"><span class="fa fa-shield"></span>
-                        <b class="nav-text">My Profile</b></a>
                 </li>
 
                 <li class="emptys">&nbsp;</li>
@@ -220,9 +219,14 @@
 </header>
 
 
-@include('flash')
 
-@yield('content')
+<div id="main-container">
+    <div class="container-fluid">
+        @include('flash')
+
+        @yield('content')
+    </div>
+</div>
 
 
 <div id="footer-container">
@@ -256,6 +260,12 @@
 <script src="{{url('assets/user/js/js.js')}}"></script>
 
 <script>
+
+    $("#datatable").dataTable();
+
+    var pricing = JSON.parse(`{!! @$pricing !!}`);
+
+
     function copy_keyboard() {
         var copyText = document.getElementById("myInput");
         copyText.select();
@@ -264,9 +274,22 @@
         alert("Copied the text: " + copyText.value);
     }
 
-    $(function () {
-        $("#datatable").dataTable();
-    })
+
+    $("#plan").change(function (e) {
+
+        for (var i = 0; i < pricing.length ; i++) {
+            if ($(this).val() == pricing[i].id){
+
+                $("#amount").removeAttr('disabled');
+
+                $("#min-amount").val(pricing[i].min_amount);
+                $("#max-amount").val((pricing[i].max_amount));
+                $("#daily-return").val(pricing[i].daily_return+"%");
+            }
+        }
+
+    });
+
 </script>
 </body>
 </html>

@@ -184,10 +184,17 @@
                     </ul>
                 </li>
 
-                <li >
+                <li>
                     <a href="{{url('admin/deposit')}}">
-                        <i class="fa fa-credit-card text-primary "></i>
+                        <i class="fa fa-wallet text-primary "></i>
                         <span>All Users Deposited</span>
+                    </a>
+                </li>
+
+                <li >
+                    <a href="{{url('admin/withdrawal')}}">
+                        <i class="fa fa-wallet text-primary "></i>
+                        <span>&nbsp; All Users Withdrawal</span>
                     </a>
                 </li>
 

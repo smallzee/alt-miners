@@ -71,12 +71,14 @@ class CreateController extends Controller
 
         }
 
+        $referral_code = substr(md5(uniqid(rand(),true)),0,8);
 
         $user = new User();
         $user->email_address = $request->email_address;
         $user->full_name = $request->full_name;
         $user->password = Hash::make($request->password);
         $user->country_id = $request->country;
+        $user->referral_code = $referral_code;
 
         if ($user->save()){
             $user_id = $user->id;

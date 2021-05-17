@@ -52,7 +52,7 @@
                                     <td>
                                         <div class="btn-group">
                                             <a href="{{url('admin/profile/'.$value->id)}}" class="btn btn-primary btn-sm">View</a>
-                                            <a href="{{url('admin/change-role/'.$value->id)}}" class="btn btn-primary">Change User Role</a>
+                                            <a href="{{url('admin/change-role/'.$value->id)}}" class="btn btn-primary btn-sm">Change User Role</a>
                                         </div>
                                     </td>
                                     </td>

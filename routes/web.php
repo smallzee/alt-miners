@@ -18,6 +18,7 @@ Route::get("faq", "MyController@faq")->name('faq');
 Route::get("contact", "MyController@contact")->name('contact');
 Route::get("cloud-pricing", "MyController@cloud_pricing")->name('cloud_pricing');
 Route::get("doge-pricing", "MyController@doge_pricing")->name('doge_pricing');
+Route::get("webhook_daily_profit", "MyController@webhook_daily_profit")->name('webhook_daily_profit');
 
 Route::group(['namespace'=>'account','prefix'=>'account'], function (){
     Route::resource("login", "LoginController");
@@ -35,20 +36,32 @@ Route::group(['namespace'=>'user','prefix' => 'user'],function (){
         Route::middleware(['isKycVerified',])->group(function (){
             Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
 
+            // referral
             Route::get('/referral', "ReferralController@referral")->name('referral');
 
 
+            // deposit
             Route::get('/deposit', "DepositController@deposit")->name('deposit');
             Route::get('/payment', "DepositController@payment")->name('payment');
 
             Route::post('/create_deposit', "DepositController@create_deposit")->name('create_deposit');
              Route::post('/create_new_payment', "DepositController@create_new_payment")->name('create_new_payment');
 
+             // user
             Route::post('/update_change_password', "UserController@update_change_password")->name('update_change_password');
             Route::get('/change-password', "UserController@change_password")->name('change_password');
-            Route::get('/my-orders', "UserController@my_orders")->name('my_orders');
             Route::get('/profile', "UserController@profile")->name('profile');
             Route::post('/update_profile', "UserController@update_profile")->name('update_settings');
+
+            // mining
+            Route::get('/mining/{slug}', "MiningController@mining")->name('mining');
+            Route::post('/create_mining', "MiningController@create_mining")->name('create_mining');
+            Route::get('/my-orders', "MiningController@my_orders")->name('my_orders');
+
+            // withdrawal
+            Route::get('/withdrawal', "WithdrawalController@withdrawal")->name('withdrawal');
+            Route::get('/withdrawal-history', "WithdrawalController@withdrawal_history")->name('withdrawal_history');
+            Route::post('/create_withdrawal', "WithdrawalController@create_withdrawal")->name('create_withdrawal');
 
             Route::get('/contact-support', "UserController@contact_support")->name('contact_support');
             Route::post('/create_contact_support', "UserController@create_contact_support")->name('create_contact_support');
@@ -103,6 +116,12 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
 
         Route::post('/create_new_role', "RoleController@create_new_role")->name('create_new_role');
         Route::get('/change-role/{id}', "RoleController@change_role")->name('change_role');
+
+        // withdrawal
+        Route::get('/withdrawal', "WithdrawalController@withdrawal")->name('withdrawal');
+        Route::get('/edit-withdrawal/{id}', "WithdrawalController@edit_withdrawal")->name('edit_withdrawal');
+        Route::post('/withdrawal_confirmation', "WithdrawalController@withdrawal_confirmation")->name('withdrawal_confirmation');
+        Route::post('/delete_withdrawal', "WithdrawalController@delete_withdrawal")->name('delete_withdrawal');
 
         // settings
         Route::get('/settings', "SettingsController@settings")->name('settings');

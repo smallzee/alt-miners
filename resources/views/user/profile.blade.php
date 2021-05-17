@@ -2,8 +2,6 @@
 
 @section('content')
 
-    <div id="main-container">
-        <div class="container-fluid">
             <div class="card-group">
 
                 <form action="{{url('user/update_profile')}}" method="post" enctype="multipart/form-data">
@@ -73,6 +71,5 @@
 
 
             </div>
-        </div>
-    </div>
+
 @endsection

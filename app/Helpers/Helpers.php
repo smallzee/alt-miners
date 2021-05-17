@@ -141,3 +141,8 @@ function user_details($id,$value){
     $data = \App\User::where('id',$id)->first();
     return $data[$value];
 }
+
+function get_plan($id,$value){
+    $data = \App\Pricing::where('id',$id)->first();
+    return $data[$value];
+}

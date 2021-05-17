@@ -47,11 +47,11 @@
                             <p>
                                 <strong><i class="lni-check-box"></i> TH/S</strong> {{ ($value->duration == 1) ? $value->duration.'day' : $value->duration.'days' }} </p>
                             <p>
-                                <strong><i class="lni-check-box"></i> Return On Investment</strong> {{$value->daily_profit}}% daily profit</p>
+                                <strong><i class="lni-check-box"></i> Return On Investment</strong> {{$value->daily_return}}% daily profit</p>
                             <p>
                                 <strong><i class="lni-check-box"></i>Principle</strong>Capital back in {{ ($value->duration == 1) ? $value->duration.'day' : $value->duration.'days' }}</p>
                             <div class="button-area">
-                                <a href="" class="btn btn-common btn-lg">
+                                <a href="{{url('user/mining/buy-haspower')}}" class="btn btn-common btn-lg">
                                     Purchase
                                 </a>
                             </div>

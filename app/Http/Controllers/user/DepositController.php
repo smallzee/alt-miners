@@ -38,11 +38,11 @@ class DepositController extends Controller
                 $msg.='<p>'.$value.'</p>';
             }
 
-            return redirect()->back()->with('alert_error',$msg)->withInput();
+            return redirect()->back()->with('flash_error',$msg)->withInput();
         }
 
         if ($request->amount == 0){
-            return redirect()->back()->with('alert_error','Invalid amount entered')->withInput();
+            return redirect()->back()->with('flash_error','Invalid amount entered')->withInput();
         }
 
         $currency = $request->currency;
@@ -73,7 +73,7 @@ class DepositController extends Controller
         $payment_data = Session::get('payment_data');
 
         if (!isset($payment_data)){
-            return redirect('user/dashboard')->with('alert_error',"Unable to access payment page");
+            return redirect('user/dashboard')->with('flash_error',"Unable to access payment page");
         }
 
         $data['page_title'] = "Payment";
@@ -89,7 +89,7 @@ class DepositController extends Controller
         ]);
 
         if ($validator->fails()){
-            return redirect()->back()->with('alert_error',$validator->errors()->first())->withInput();
+            return redirect()->back()->with('flash_error',$validator->errors()->first())->withInput();
         }
 
         if ($request->hasFile('image')){
@@ -117,7 +117,7 @@ class DepositController extends Controller
 
             Session::forget('payment_data');
 
-            return redirect('user/deposit')->with('alert_success','Your payment has been on processing, please wait for confirmation');
+            return redirect('user/deposit')->with('flash_success','Your payment has been on processing, please wait for confirmation');
         }
 
     }

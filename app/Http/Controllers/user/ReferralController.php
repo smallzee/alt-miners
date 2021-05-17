@@ -19,7 +19,7 @@ class ReferralController extends Controller
     public function referral(){
         $data['page_title'] = "Referral";
 
-        $data['referral'] = User::where('referral_user_id',auth()->user()->id)->get();
+        $data['referral'] = User::findOrFail(auth()->user()->id)->referrals;
 
         return view('user.referral',$data);
     }

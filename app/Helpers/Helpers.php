@@ -146,3 +146,8 @@ function get_plan($id,$value){
     $data = \App\Pricing::where('id',$id)->first();
     return $data[$value];
 }
+
+function get_all_user_balance($value){
+    $data = \App\Wallet::sum($value);
+    return $data;
+}

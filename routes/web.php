@@ -97,10 +97,18 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/doge-pricing', "PricingController@doge_pricing")->name('doge_pricing');
         Route::post('/create_new_cloud_pricing', "PricingController@create_new_cloud_pricing")->name('create_new_cloud_pricing');
 
+
+        Route::get('/mining', "MiningController@mining")->name('mining');
+        Route::get('/view-mining/{mining}', "MiningController@view_mining")->name('view_trading_plan');
+        Route::post('/delete_mining', "MiningController@delete_mining")->name('delete_mining');
+
         // deposit
         Route::get('/deposit', "DepositController@deposit")->name('deposit');
         Route::get('/deposit-details/{deposit}', "DepositController@deposit_details")->name('deposit_details');
         Route::post('/deposit_confirmation', "DepositController@deposit_confirmation")->name('deposit_confirmation');
+
+        Route::get('/profile/{user}', "UserController@profile")->name('profile');
+        Route::post('/top_up_balance', "UserController@top_up_balance")->name('top_up_balance');
 
         // kyc
         Route::get('/kyc', "KycController@kyc")->name('kyc');

@@ -144,7 +144,14 @@
                 </li>
 
 
-                <li class="header">USERS</li>
+                <li class="header">USERS / MINING / WITHDRAWAL</li>
+
+                <li >
+                    <a href="{{url('admin/mining')}}">
+                        <i class="fa-history fa text-primary "></i>
+                        <span>&nbsp; All Mining</span>
+                    </a>
+                </li>
 
                 <li >
                     <a href="{{url('admin/users')}}">

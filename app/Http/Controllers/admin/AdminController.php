@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Mining;
 use App\Pricing;
 use App\User;
 use Illuminate\Http\Request;
@@ -24,6 +25,7 @@ class AdminController extends Controller
         $data['all_admin'] = User::where('role_id','>',1)->count();
         $data['total_cloud_pricing'] = Pricing::where('pricing_type',1)->count();
         $data['total_doge_pricing'] = Pricing::where('pricing_type',2)->count();
+        $data['mining'] = Mining::orderBy('id','desc')->limit(10)->get();
 
         return view('admin.dashboard',$data);
     }

@@ -23,6 +23,8 @@
                             <th>Email Address</th>
                             <th>Full Name</th>
                             <th>Role</th>
+                            <th>Phone Number</th>
+                            <th>City</th>
                             <th>Country</th>
                             <th>Status</th>
                             <th>Actions</th>
@@ -34,6 +36,8 @@
                             <th>Email Address</th>
                             <th>Full Name</th>
                             <th>Role</th>
+                            <th>Phone Number</th>
+                            <th>City</th>
                             <th>Country</th>
                             <th>Status</th>
                             <th>Actions</th>
@@ -47,12 +51,13 @@
                                     <td>{{ $value->email_address }}</td>
                                     <td>{{$value->full_name}}</td>
                                     <td>{{ucwords($value->role_name)}}</td>
+                                    <td>{{ !(empty($value->phone_number)) ? $value->phone_number : 'N/A' }}</td>                                    <td>{{ !(empty($value->city)) ? $value->city : 'N/A' }}</td>
                                     <td>{{ get_country($value->country_id,'country_name') }}</td>
                                     <td>{{ status($value->status) }}</td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="{{url('admin/profile/'.$value->id)}}" class="btn btn-primary btn-sm">View</a>
-                                            <a href="{{url('admin/change-role/'.$value->id)}}" class="btn btn-primary btn-sm">Change User Role</a>
+                                            <a href="{{url('admin/change-role/'.$value->id)}}" class="btn btn-primary btn-sm">User Role</a>
                                         </div>
                                     </td>
                                     </td>

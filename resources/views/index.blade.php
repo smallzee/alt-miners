@@ -452,6 +452,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
+                    <img src="{{image_url('cert.jpeg')}}" style="width: 100%" alt="">
+                </div>
+                <div class="col-md-6">
+                    <img src="{{image_url('certs.jpeg')}}" style="width: 100%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
                     <a class="fx-widget" data-widget="newsfeed" data-lang="en" data-post-date-color="#999" data-post-description-color="#333333" data-post-title-color="#333333" data-widget-bg-color="#FFF" data-width="650" data-height="855" data-show-date data-title-font-size="18" data-intro-font-size="16" data-show-upper-intro data-show-divider data-category="news" data-section="all" data-base-url="https://www.fxempire.com" data-url="//www.fxempire.com" href="https://www.fxempire.com" rel="nofollow" style="font-family:Helvetica;font-size:16px;line-height:1.5;text-decoration:none;"> <span style="color:#999999;display:inline-block;margin-top:10px;font-size:12px;"> </span> <img style="width:87px; height:14px;" src="https://www.fxempire.com/logo-full.svg" alt="FX Empire logo" /> </a> <script async charset="utf-8" src="https://widgets.fxempire.com/widget.js" ></script>
                 </div>
                 <div class="col-md-6">

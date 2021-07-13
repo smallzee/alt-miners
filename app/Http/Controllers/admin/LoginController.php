@@ -68,10 +68,12 @@ class LoginController extends Controller
         ]);
 
 
-        if ($log && \auth()->user()->role_id > 1){
-            return redirect()->intended('admin/dashboard');
-        }elseif (\auth()->user()->role_id == 1){
-            return back()->with("flash_error", 'Access denied')->withInput();
+        if ($log){
+            if (\auth()->user()->role_id > 1){
+                return redirect()->intended('admin/dashboard');
+            }else{
+                return back()->with("flash_error", 'Access denied')->withInput();
+            }
         }else{
             return back()->with("flash_error", 'Invalid login details please try again')->withInput();
         }

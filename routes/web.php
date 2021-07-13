@@ -30,45 +30,48 @@ Route::group(['namespace'=>'user','prefix' => 'user'],function (){
 
     Route::middleware(['isStatus'])->group(function (){
 
-        Route::get("kyc", "KycController@kyc")->name('kyc');
+        Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
+
+        // referral
+        Route::get('/referral', "ReferralController@referral")->name('referral');
+
+
+        // deposit
+        Route::get('/deposit', "DepositController@deposit")->name('deposit');
+        Route::get('/payment', "DepositController@payment")->name('payment');
+
+        Route::post('/create_deposit', "DepositController@create_deposit")->name('create_deposit');
+        Route::post('/create_new_payment', "DepositController@create_new_payment")->name('create_new_payment');
+
+        // user
+        Route::post('/update_change_password', "UserController@update_change_password")->name('update_change_password');
+        Route::get('/change-password', "UserController@change_password")->name('change_password');
+        Route::get('/profile', "UserController@profile")->name('profile');
+        Route::post('/update_profile', "UserController@update_profile")->name('update_settings');
+
+        // mining
+        Route::get('/mining/{slug}', "MiningController@mining")->name('mining');
+        Route::post('/create_mining', "MiningController@create_mining")->name('create_mining');
+        Route::get('/my-orders', "MiningController@my_orders")->name('my_orders');
+
+        // withdrawal
+        Route::get('/withdrawal', "WithdrawalController@withdrawal")->name('withdrawal');
+        Route::get('/withdrawal-history', "WithdrawalController@withdrawal_history")->name('withdrawal_history');
+        Route::post('/create_withdrawal', "WithdrawalController@create_withdrawal")->name('create_withdrawal');
+
+        Route::get('/contact-support', "UserController@contact_support")->name('contact_support');
+        Route::post('/create_contact_support', "UserController@create_contact_support")->name('create_contact_support');
+
+        // logout
+        Route::get('/logout', "UserController@logout")->name('logout');
+
+       /* Route::get("kyc", "KycController@kyc")->name('kyc');
         Route::post("upload_kyc", "KycController@upload_kyc")->name('upload_kyc');
 
         Route::middleware(['isKycVerified',])->group(function (){
-            Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
 
-            // referral
-            Route::get('/referral', "ReferralController@referral")->name('referral');
+        });*/
 
-
-            // deposit
-            Route::get('/deposit', "DepositController@deposit")->name('deposit');
-            Route::get('/payment', "DepositController@payment")->name('payment');
-
-            Route::post('/create_deposit', "DepositController@create_deposit")->name('create_deposit');
-             Route::post('/create_new_payment', "DepositController@create_new_payment")->name('create_new_payment');
-
-             // user
-            Route::post('/update_change_password', "UserController@update_change_password")->name('update_change_password');
-            Route::get('/change-password', "UserController@change_password")->name('change_password');
-            Route::get('/profile', "UserController@profile")->name('profile');
-            Route::post('/update_profile', "UserController@update_profile")->name('update_settings');
-
-            // mining
-            Route::get('/mining/{slug}', "MiningController@mining")->name('mining');
-            Route::post('/create_mining', "MiningController@create_mining")->name('create_mining');
-            Route::get('/my-orders', "MiningController@my_orders")->name('my_orders');
-
-            // withdrawal
-            Route::get('/withdrawal', "WithdrawalController@withdrawal")->name('withdrawal');
-            Route::get('/withdrawal-history', "WithdrawalController@withdrawal_history")->name('withdrawal_history');
-            Route::post('/create_withdrawal', "WithdrawalController@create_withdrawal")->name('create_withdrawal');
-
-            Route::get('/contact-support', "UserController@contact_support")->name('contact_support');
-            Route::post('/create_contact_support', "UserController@create_contact_support")->name('create_contact_support');
-
-            // logout
-            Route::get('/logout', "UserController@logout")->name('logout');
-        });
     });
 });
 
@@ -90,6 +93,7 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         Route::get('/edit-role/{id}', "RoleController@edit_role")->name('edit_role');
         Route::post('/update_role', "RoleController@update_role")->name('update_role');
         Route::post('/update_user_role', "RoleController@update_user_role")->name('update_user_role');
+        Route::post('/create_new_role', "RoleController@create_new_role")->name('create_new_role');
 
         // pricing
         Route::get('/add-pricing', "PricingController@add_pricing")->name('add_pricing');
@@ -122,7 +126,6 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
         // country
         Route::get('/country', "CountryController@country")->name('country');
 
-        Route::post('/create_new_role', "RoleController@create_new_role")->name('create_new_role');
         Route::get('/change-role/{id}', "RoleController@change_role")->name('change_role');
 
         // withdrawal

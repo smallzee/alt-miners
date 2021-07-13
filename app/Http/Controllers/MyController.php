@@ -67,7 +67,7 @@ class MyController extends Controller
                 $mine->is_active = 0;
                 $mine->save();
 
-                $mine->user->wallet->balance = $mine->user->wallet->balance + $value->daily_profit;
+                $mine->user->wallet->balance = $mine->user->wallet->balance + $value->daily_profit + $value->amount;
                 $mine->user->wallet->save();
             }
 
